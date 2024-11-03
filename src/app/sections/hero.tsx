@@ -31,7 +31,6 @@ export function Hero() {
               <Image src={src} alt={`Image ${index + 1}`} layout="fill" objectFit="cover" />
             </div>
           ))}
-          // only show button when desktop
           <button
             onClick={prevImage}
             className="hidden md:block absolute left-10 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-4 rounded-full"
