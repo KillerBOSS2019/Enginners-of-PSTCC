@@ -35,7 +35,7 @@ export default function Home() {
         <Sponsors />
       </main>
       <Footer />
-      <ScrollToTopButton />
+      <ScrollToTopButton setMobileMenuOpen={setMobileMenuOpen} mobileMenuOpen={mobileMenuOpen} />
     </div>
   );
 }

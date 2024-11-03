@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const images = ['/./image1.png', '/./image2.png', '/./image3.png'];
+    const images = ['./image1.png', './image2.png', './image3.png'];
   
     useEffect(() => {
       const interval = setInterval(() => {

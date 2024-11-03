@@ -2,7 +2,7 @@ import Image from "next/image";
 import { NavList } from "./Navlist";
 import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/outline';
 
-interface HeaderProps {
+export interface HeaderProps {
   setMobileMenuOpen: (open: boolean) => void;
   mobileMenuOpen: boolean;
 }

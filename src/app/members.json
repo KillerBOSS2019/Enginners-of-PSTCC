@@ -3,37 +3,37 @@
         {
             "name": "Olga",
             "role": "Advisor",
-            "img": "/./members/olga.jfif",
+            "img": "./members/olga.jfif",
             "bio": "Example bio"
         },
         {
             "name": "Kenji",
             "role": "President",
-            "img": "/./rocket.png",
+            "img": "./rocket.png",
             "bio": "Example bio"
         },
         {
             "name": "Andy",
             "role": "Vice-President",
-            "img": "/./members/andy.jpg",
+            "img": "./members/andy.jpg",
             "bio": "Example bio"
         },
         {
             "name": "Zach",
             "role": "Treasurer",
-            "img": "/./rocket.png",
+            "img": "./rocket.png",
             "bio": "Example bio"
         },
         {
             "name": "Tommy",
             "role": "Secretary",
-            "img": "/./rocket.png",
+            "img": "./rocket.png",
             "bio": "Example bio"
         },
         {
             "name": "Damien",
             "role": "General-Affairs",
-            "img": "/./members/damien.jfif",
+            "img": "./members/damien.jfif",
             "bio": "I'm Damien Staebler! I am working towards getting a degree in Computer Science. Currently, I am part of the Engineering Club at PSTCC working on various projects."
         }
     ]

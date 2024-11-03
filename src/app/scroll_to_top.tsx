@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
+import { HeaderProps } from './header/header';
 
-function ScrollToTopButton() {
+function ScrollToTopButton({ setMobileMenuOpen, mobileMenuOpen }: HeaderProps){
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.pageYOffset > 300) {
         setIsVisible(true);
+        setMobileMenuOpen(false);
       } else {
         setIsVisible(false);
       }
