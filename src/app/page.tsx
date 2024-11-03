@@ -10,6 +10,7 @@ import { Project } from './sections/project';
 import { Team } from './sections/Team';
 import { Footer } from './footer';
 import { Sponsors } from './sections/sponsors';
+import ScrollToTopButton from './scroll_to_top';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -37,6 +38,7 @@ export default function Home() {
         <Sponsors />
       </main>
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }
