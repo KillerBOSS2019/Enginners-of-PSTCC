@@ -17,7 +17,7 @@ function NavList() {
 
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = ['/image1.png', '/image2.png', '/image3.png'];
+  const images = ['./image1.png', './image2.png', './image3.png'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -141,7 +141,7 @@ function Footer() {
       <div className="p-4">
         <div className="flex items-center justify-between">
           <div className="flex flex-col items-left gap-4">
-            <Image src="/logo.svg" alt="Next.js logo" width={100} height={100} />
+            <Image src="./logo.svg" alt="Next.js logo" width={100} height={100} />
             <p className="text-lg font-semibold text-white">© 2024 Pellissippi State Engineering Club</p>
           </div>
           <div className="flex items-center gap-4">
@@ -207,7 +207,7 @@ export default function Home() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Enginners of PSTCC</span>
-              <Image src="/logo.svg" alt="Next.js logo" width={100} height={100} priority />
+              <Image src="./logo.svg" alt="Next.js logo" width={100} height={100} priority />
             </a>
           </div>
           <div className="hidden lg:flex">
@@ -235,7 +235,7 @@ export default function Home() {
       <main>
         <Carousel />
         <SectionBanner id="project" title="The Project" />
-        <Section bgImage={"/bg.png"} bgColor={"#003882"}>
+        <Section bgImage={"./bg.png"} bgColor={"#003882"}>
           
           {/* main title "NASA's Midwest High-Power ROcket Competition" on the top and below on the left side will have infomation eg "Our team will be working on two specific challenges" and then the "The First Challenge" with "Launch the rocket exactly 1000 ft. above the ground and land it safely intact". on the right its going to have img */}
           <h1 className="text-4xl font-semibold text-white py-12 px-4">NASA&apos;s Midwest High-Power Rocket Competition</h1>
@@ -251,7 +251,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col">
-              <Image src="/rocket.png" alt="Rocket" width={400} height={400} />
+              <Image src="./rocket.png" alt="Rocket" width={400} height={400} />
             </div>
           </div>
         </Section>

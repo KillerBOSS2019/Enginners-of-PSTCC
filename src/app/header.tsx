@@ -5,7 +5,7 @@ export function Header() {
         <header className="flex items-center justify-between w-full max-w-4xl px-8 py-4 mx-auto">
         <div className="flex items-center gap-4">
             <Image
-            src="/next.svg"
+            src="./next.svg"
             alt="Next.js logo"
             width={180}
             height={38}
