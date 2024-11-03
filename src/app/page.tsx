@@ -1,9 +1,6 @@
 'use client'
 
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/outline';
-import { members } from './members.json';
 import { Header } from './header/header';
 import { Hero } from './sections/hero';
 import { Project } from './sections/project';
