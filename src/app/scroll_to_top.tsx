@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { HeaderProps } from './header/header';
 
-function ScrollToTopButton({ setMobileMenuOpen, mobileMenuOpen }: HeaderProps){
+function ScrollToTopButton({ setMobileMenuOpen }: HeaderProps){
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
