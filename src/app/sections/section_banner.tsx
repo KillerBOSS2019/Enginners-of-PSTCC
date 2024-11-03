@@ -1,4 +1,4 @@
-export function SectionBanner({ title, description, id, children }: { title: string, description?: string, id: string, children: React.ReactNode }) {
+export function SectionBanner({ title, description, id, children }: { title: string, description?: string, id: string, children?: React.ReactNode }) {
   return (
     <section id={id} className="relative overflow-x-clip z-30">
       <div className="mx-auto py-4 bg-[var(--section-header)]">
