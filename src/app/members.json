@@ -1,0 +1,40 @@
+{
+    "members": [
+        {
+            "name": "Olga",
+            "role": "Advisor",
+            "img": "/rocket.png",
+            "bio": "Example bio"
+        },
+        {
+            "name": "Kenji",
+            "role": "President",
+            "img": "/rocket.png",
+            "bio": "Example bio"
+        },
+        {
+            "name": "Andy",
+            "role": "Vice-President",
+            "img": "/rocket.png",
+            "bio": "Example bio"
+        },
+        {
+            "name": "Zach",
+            "role": "Treasurer",
+            "img": "/rocket.png",
+            "bio": "Example bio"
+        },
+        {
+            "name": "Tommy",
+            "role": "Secretary",
+            "img": "/rocket.png",
+            "bio": "Example bio"
+        },
+        {
+            "name": "Damien",
+            "role": "General-Affairs",
+            "img": "/rocket.png",
+            "bio": "Example bio"
+        }
+    ]
+}
