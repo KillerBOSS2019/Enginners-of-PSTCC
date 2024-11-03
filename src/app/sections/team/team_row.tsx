@@ -2,7 +2,7 @@ import { TeamCard } from "./team_card";
 
 export function TeamRow({ team }: { team: { img: string, name: string, role: string, bio: string }[] }) {
   return (
-    <div className="flex flex-col items-center gap-4 w-full">
+    <div className="flex flex-col items-center gap-4 w-full px-4">
       {/* First row with one card */}
       <div className="w-full">
         <TeamCard {...team[0]} />

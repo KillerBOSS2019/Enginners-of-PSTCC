@@ -6,7 +6,7 @@ export function Project() {
   return (
     <>
       <SectionBanner id="project" title="The Project" />
-      <Section bgImage={"./bg.png"} bgColor={"#003882"}>
+      <Section bgImage={"/./bg.png"} bgColor={"#003882"}>
         <h1 className="text-4xl font-semibold text-white py-12 px-4">NASA&apos;s Midwest High-Power Rocket Competition</h1>
         <div className="flex flex-col items-center text-center lg:flex-row lg:items-stretch gap-6">
           <div className="flex flex-col gap-12 w-full lg:w-1/2 pr-12 bg-[#002c67] rounded-xl mx-auto p-4 flex-grow">
@@ -21,7 +21,7 @@ export function Project() {
           </div>
           <div className="flex flex-col rounded-xl">
             <div className='overflow-hidden rounded-xl border-solid border-2 border-white flex-shrink-0 drop-shadow'>
-              <Image src="./rocket.png" alt="Rocket" width={400} height={400} />
+              <Image src="/./rocket.png" alt="Rocket" width={400} height={400} />
             </div>
           </div>
         </div>
