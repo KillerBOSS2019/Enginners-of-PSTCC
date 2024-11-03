@@ -1,11 +1,15 @@
-import Image from 'next/image';
+import { CustomImage } from '../Image';
 import { SectionBanner } from './section_banner';
 import { Section } from './section_templete';
 
 export function Project() {
   return (
     <>
-      <SectionBanner id="project" title="The Project" />
+      <SectionBanner id="project" title="The Project">
+        <div className="absolute -right-20 -top-10 md:-top-20 lg:-right-20 p-4 z-40 overflow-hidden">
+          <CustomImage src="./gear.svg" alt="Gears" width={250} height={250} className="w-36 h-36 md:w-60 md:h-60 lg:w-72 lg:h-72" />
+        </div>
+      </SectionBanner>
       <Section bgImage={"./bg.png"} bgColor={"#003882"}>
         <h1 className="text-4xl font-semibold text-white py-12 px-4">NASA&apos;s Midwest High-Power Rocket Competition</h1>
         <div className="flex flex-col items-center text-center lg:flex-row lg:items-stretch gap-6">
@@ -21,7 +25,7 @@ export function Project() {
           </div>
           <div className="flex flex-col rounded-xl">
             <div className='overflow-hidden rounded-xl border-solid border-2 border-white flex-shrink-0 drop-shadow'>
-              <Image src="./rocket.png" alt="Rocket" width={400} height={400} />
+              <CustomImage src="./rocket.png" alt="Rocket" width={400} height={400} />
             </div>
           </div>
         </div>

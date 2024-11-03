@@ -1,0 +1,24 @@
+{
+    "social_media": [
+        {
+            "name": "Facebook",
+            "url": "https://www.facebook.com/",
+            "img": "./social_media/facebook.svg"
+        },
+        {
+            "name": "X",
+            "url": "https://twitter.com/",
+            "img": "./social_media/x.svg"
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/",
+            "img": "./social_media/instagram.svg"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/",
+            "img": "./social_media/linkedin.svg"
+        }
+    ]
+}

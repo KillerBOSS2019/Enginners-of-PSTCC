@@ -24,11 +24,11 @@ export function Header({ setMobileMenuOpen, mobileMenuOpen }: HeaderProps) {
               <Image src="./logo.svg" alt="Next.js logo" width={100} height={100} priority />
             </a>
           </div>
-          <div className="hidden lg:flex">
+          <div className="hidden sm:flex">
             <NavList />
           </div>
           <button
-            className="ml-auto h-10 w-10 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+            className="ml-auto h-10 w-10 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent sm:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? (
               <XMarkIcon className="h-10 w-10" strokeWidth={2} />

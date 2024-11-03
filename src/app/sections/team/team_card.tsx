@@ -1,10 +1,10 @@
-import Image from 'next/image';
+import { CustomImage } from "../../Image";
 
 export function TeamCard({ img, name, role, bio }: { img: string, name: string, role: string, bio: string }) {
   return (
     <div className="flex flex-row mx-auto gap-4 items-start bg-[#002c67] rounded-xl p-4 w-full max-w-md">
       <div className="overflow-hidden bg-white rounded-xl border-solid border-2 border-white flex-shrink-0 w-24 h-24">
-        <Image src={img} alt={name} width={96} height={96} />
+        <CustomImage src={img} alt={name} width={96} height={96} />
       </div>
       <div className="flex flex-col gap-2 overflow-hidden">
         <div className="flex flex-row items-center gap-2">

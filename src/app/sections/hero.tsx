@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Image from 'next/image';
+import { CustomImage } from "../Image";
 
 export function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,18 +28,18 @@ export function Hero() {
               key={index}
               className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
             >
-              <Image src={src} alt={`Image ${index + 1}`} layout="fill" objectFit="cover" />
+              <CustomImage src={src} alt={`Image ${index + 1}`} layout="fill" objectFit="cover" />
             </div>
           ))}
           <button
             onClick={prevImage}
-            className="hidden md:block absolute left-10 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-4 rounded-full"
+            className="hidden sm:block absolute left-10 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-4 rounded-full"
           >
             &#9664;
           </button>
           <button
             onClick={nextImage}
-            className="hidden md:block absolute right-10 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-4 rounded-full"
+            className="hidden sm:block absolute right-10 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-4 rounded-full"
           >
             &#9654;
           </button>
