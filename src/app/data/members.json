@@ -4,37 +4,67 @@
             "name": "Olga",
             "role": "Advisor",
             "img": "./members/olga.jfif",
-            "bio": "Example bio"
+            "bio": "Engineering Professor at Pellissippi State Community College."
         },
         {
             "name": "Kenji",
-            "role": "President",
-            "img": "./rocket.png",
-            "bio": "Example bio"
+            "role": "Project-Manager",
+            "img": "./members/Kenji.png",
+            "bio": "I am currently a aerospace engineering major with interest in getting a minor in physics. I have interest in space exploration and innovation into new ideas and technology."
         },
         {
             "name": "Andy",
-            "role": "Vice-President",
+            "role": "Lead-Propulsion/Recovery",
             "img": "./members/andy.jpg",
-            "bio": "Example bio"
+            "bio": "I made the switch into computer engineering in hopes of gaining knowledge in both the hardware and software development fields. I have a passion for learning and creating new things."
         },
         {
             "name": "Zach",
-            "role": "Treasurer",
-            "img": "./rocket.png",
-            "bio": "Example bio"
-        },
-        {
-            "name": "Tommy",
-            "role": "Secretary",
-            "img": "./rocket.png",
-            "bio": "Example bio"
+            "role": "Lead-Aeronautics",
+            "img": "./members/Kenji.png",
+            "bio": "I am currently a aerospace engineering major. I have interest in formula 1 and aviation/NASA."
         },
         {
             "name": "Damien",
-            "role": "General-Affairs",
+            "role": "Lead-Avionics",
             "img": "./members/damien.jfif",
             "bio": "I'm Damien Staebler! I am working towards getting a degree in Computer Science. Currently, I am part of the Engineering Club at PSTCC working on various projects."
+        },
+        {
+            "name": "Kavya",
+            "role": "Lead-Business",
+            "img": "./members/Kenji.png",
+            "bio": "I am currently a business major and have interest in business analytics."
+        },
+        {
+            "name": "Tommy",
+            "role": "Propulsion/Recovery",
+            "img": "./members/Kenji.png",
+            "bio": "Currently a mechanical engineering major and want to persue a graduate program."
+        },
+        {
+            "name": "Ayden",
+            "role": "Aeronautics",
+            "img": "./members/Kenji.png",
+            "bio": "Currently construction engineering major. Have interest in engineering projects including those NASA related."
+        },
+        {
+            "name": "Mason",
+            "role": "Aeronautics",
+            "img": "./members/Kenji.png",
+            "bio": "I am currently mechanical engineering major. I have interest in aviation with hopes of becoming a commercial pilot."
+        },
+        {
+            "name": "Addison",
+            "role": "Business",
+            "img": "./members/Kenji.png",
+            "bio": "I am currently a English major. I have interest in publishing my own books."
+        },
+        {
+            "name": "Vincent",
+            "role": "Avionics",
+            "img": "./members/Kenji.png",
+            "bio": "I am currently a Computer Science major."
         }
     ]
 }

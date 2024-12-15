@@ -12,7 +12,7 @@ export function Team() {
           <CustomImage src="./gear.svg" alt="Gears" width={300} height={300} className="gear-filter" />
         </div>
       </SectionBanner>
-      <Section bgImage={undefined} bgColor={"#003882"} className="pt-40 pb-20">
+      <Section bgImage={undefined} bgColor={"#003882"} className="pt-40 pb-12" inner_style={{maxWidth: "fit-content !important"}}>
         <TeamRow team={members} />
       </Section>
     </>

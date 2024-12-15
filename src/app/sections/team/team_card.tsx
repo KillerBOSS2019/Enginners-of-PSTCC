@@ -7,7 +7,7 @@ export function TeamCard({ img, name, role, bio }: { img: string, name: string, 
         <CustomImage src={img} alt={name} width={96} height={96} />
       </div>
       <div className="flex flex-col gap-2 overflow-hidden">
-        <div className="flex flex-row items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <p className="text-lg font-semibold text-white truncate">{name}</p>
           <div className="w-2 h-2 bg-white rounded-full"></div>
           <p className="text-lg font-semibold text-white truncate">{role}</p>

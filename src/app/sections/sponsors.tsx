@@ -8,7 +8,7 @@ export function Sponsors() {
         <>
             <SectionBanner id="sponsors" title="Our Sponsors" description='Thank You Wonderful Sponsors!' />
             <Section bgImage={undefined} bgColor={"#003882"}>
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 px-4">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 py-12">
                     {sponsors.map((sponsor, index) => (
                         <a key={index} href={sponsor.website} target="_blank" rel="noreferrer" className="bg-white rounded-xl p-4 flex items-center justify-center">
                             <CustomImage src={sponsor.logo} alt={sponsor.name} width={200} height={200} />
