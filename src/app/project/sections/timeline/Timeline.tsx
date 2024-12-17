@@ -18,7 +18,7 @@ const events = [
 
 export default function Timeline({ showCurrent }: { showCurrent: boolean }) {
   const timelineContainerRef = useRef<HTMLDivElement | null>(null);
-  const [currentEventIndex, setCurrentEventIndex] = useState(events.findIndex(event => event.current));
+  const currentEventIndex = events.findIndex(event => event.current);
   const [currentScroll, setCurrentScroll] = useState(0);
   let hasCurrentEvent = false;
 
