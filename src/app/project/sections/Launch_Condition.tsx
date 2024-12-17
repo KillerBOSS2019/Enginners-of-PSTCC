@@ -9,7 +9,7 @@ export default function Launch_Condition() {
             <Section bgImage={undefined} bgColor={"#003882"}>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 py-12 px-4">
             {[
-                { title: "Launch Coordinates", value: "Latitude 45° 30' 40.86\" N, Longitude -92° 58' 48.79\" W" },
+                { title: "Launch Coordinates", value: "Latitude 45° 30' 40.86 N,\n Longitude -92° 58' 48.79 W" },
                 { title: "May Weather Average", value: "65°F - 75°F" },
                 { title: "Elevation to Sea-level", value: "267 meters / 876 feet" },
                 { title: "Humidity", value: "73%" },

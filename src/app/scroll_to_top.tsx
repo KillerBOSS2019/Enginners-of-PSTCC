@@ -16,7 +16,6 @@ function ScrollToTopButton({ setMobileMenuOpen }: HeaderProps){
     } else {
       setIsVisible(false);
     }
-    console.log(position);
   }
 
   const scrollToTop = () => {

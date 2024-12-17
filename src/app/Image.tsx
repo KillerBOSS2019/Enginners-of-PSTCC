@@ -16,6 +16,8 @@ interface CustomImageProps {
 
     className?: string;
 
+    fill?: boolean;
+
 }
 
 export const CustomImage = (props: CustomImageProps) => {
@@ -26,5 +28,5 @@ export const CustomImage = (props: CustomImageProps) => {
         src = `${src}`.replace('./', '/');
     }
 
-    return <Image src={src} alt={props.alt || ""} width={props.width} height={props.height} layout={props.layout} objectFit={props.objectFit} className={props.className} />;
+    return <Image src={src} alt={props.alt || ""} width={props.width} height={props.height} layout={props.layout} objectFit={props.objectFit} className={props.className} fill={props.fill} />;
 }

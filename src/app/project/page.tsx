@@ -1,5 +1,4 @@
 'use client'
-
 import { useEffect, useState } from "react";
 import { Header } from "../header/header";
 import ScrollToTopButton from "../scroll_to_top";

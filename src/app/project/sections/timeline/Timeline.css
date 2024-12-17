@@ -1,100 +1,152 @@
-.custom-timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.timeline-container {
   position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: 20px auto;
+  overflow-x: auto;  /* Horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks for child elements */
   padding: 20px 0;
+  box-sizing: border-box;
+  background: transparent;
+  width: 100%; /* Ensure full width */
+  display: block;
+  z-index: 1; /* Ensure it stays behind the line */
+  scroll-behavior: smooth;
 }
 
-.timeline-item {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  margin: 20px 0;
-}
-
-.timeline-item.right {
-  justify-content: flex-end;
-}
-
-.timeline-dot {
+/* Continuous line (inside the card) */
+.timeline-card:before {
+  content: '';
   position: absolute;
-  top: 15px;
-  left: calc(50% - 8px);
-  width: 16px;
-  height: 16px;
-  background-color: #3498db;
-  border-radius: 50%;
-  z-index: 2;
+  top: -25px;  /* Place it just above the card but inside */
+  left: 0;
+  width: 0; /* Start with 0 width */
+  height: 6px; /* Height of the line */
+  background-color: #ffffff; /* Line color */
 }
 
-.timeline-content {
-  background-color: #f4f4f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  width: 45%;
-  text-align: left;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+@keyframes expandLine {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 220px; /* Final width (can adjust this based on your requirement) */
+  }
+}
+
+@keyframes timeline_dot {
+  0% {
+    background-color: #ccc;
+  }
+  100% {
+    background-color: #007bff;
+  }
+  
+}
+
+/* Event card container */
+.timeline-event {
   position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-right: 40px; /* Add space between the cards */
+  vertical-align: top;
+  width: auto;
+  padding: 20px 0; /* Adjust padding to create space for the top line */
 }
 
-.timeline-item.left .timeline-content {
-  margin-left: 10px;
+/* Card with the line on top */
+.timeline-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  display: inline-block;
+  white-space: normal;
+  max-width: 180px;
+  position: relative; /* Required for positioning the top line */
+  margin-bottom: 20px; /* Space between cards */
 }
 
-.timeline-item.right .timeline-content {
-  margin-right: 10px;
-  text-align: right;
+/* Continuous line (inside the card) */
+.timeline-card:before {
+  content: '';
+  position: absolute;
+  top: -25px;  /* Place it just above the card but inside */
+  left: 0;
+  width: 0;
+  height: 6px; /* Height of the line */
+  background-color: #ffffff; /* Blue line color */
+}
+
+.timeline-event.current-event .timeline-card:before, .timeline-event.past-event .timeline-card:before {
+  background-color: #007bff;
+}
+
+.animate_line .timeline-card:before {
+  animation: expandLine 0.5s forwards;
+}
+
+/* The dots on the timeline */
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-bottom: 8px;
+  z-index: 3;
+  position: absolute;
+  transform: translateX(-50%); /* Center the dot horizontally */
+  top: -9px; /* Position the dot inside the line */
+  left: 50%;
+}
+
+/* Current dot glows and animates */
+.timeline-event.current-dot .timeline-dot {
+  background-color: #007bff;
+  box-shadow: 0 0 10px 3px #007bff;
+  animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px 1px #000000;
+  }
+  50% {
+    box-shadow: 0 0 20px 5px #007bff;
+  }
+}
+
+/* Date and Title styling */
+.timeline-date {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 4px;
 }
 
 .timeline-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.timeline-date {
-  font-size: 0.9rem;
-  color: #888;
-  margin-bottom: 10px;
-  display: block;
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
 }
 
 .timeline-description {
-  font-size: 1rem;
-  line-height: 1.4;
+  font-size: 0.8rem;
+  color: #666;
 }
 
-/* Connecting Line */
-.custom-timeline::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  background-color: #ddd;
-  left: calc(50% - 1px);
-  top: 0;
-  z-index: 1;
+.timeline-event.past-event.animate_dot .timeline-dot {
+  background-color: #007bff;
+  animation: timeline_dot 0.5s forwards;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .timeline-item {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Smooth scroll bar styling */
+.timeline-container::-webkit-scrollbar {
+  height: 8px;
+}
 
-  .timeline-content {
-    width: 80%;
-    text-align: center;
-  }
+.timeline-container::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
 
-  .timeline-dot {
-    left: calc(50% - 8px);
-  }
+.timeline-container::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 4px;
 }
