@@ -60,7 +60,7 @@ function generate_table(spec: Record<string, string>) {
 export default function Rocket() {
     return (
         <>
-            <SectionBanner id="project" title="Rocket Data" />
+            <SectionBanner id="rocket" title="Rocket Data" />
             <Section bgImage={"./bg.png"} bgColor={"#003882"} section_style={{ color: "black" }}>
                 <div className="flex flex-col items-center lg:flex-row lg:items-stretch gap-6 p-4">
                     <div className="flex flex-col gap-12 w-full lg:w-1/2 pr-12 bg-[#002c67] rounded-xl mx-auto p-4 flex-grow">
