@@ -6,7 +6,7 @@ const rocket1_spec = {
     "Fin Shape": "Trapezoidal",
     "Recovery Type": "Dual-Deployment",
     "Motor Class": "H550DMS",
-    "Length(mm)": 900,
+    "Length(mm)": "900",
     "Inner Diameter(mm)": "112",
     "Outer Diameter(mm)": "114",
     "Body Thickness(mm)": "2",
@@ -39,7 +39,7 @@ const rocket2_spec = {
     "Appogee(m)": "306"
 }
 
-function generate_table(spec: Record<string, any>) {
+function generate_table(spec: Record<string, string>) {
     return (
       <table className="w-full text-white">
         <tbody>
