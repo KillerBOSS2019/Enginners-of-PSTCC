@@ -33,7 +33,6 @@ export default function Page() {
                 <Launch_Condition />
                 <Motor_Specs />
                 <Rocket />
-                <Rocket_Result />
             </main>
             <Footer />
             <ScrollToTopButton setMobileMenuOpen={setMobileMenuOpen} mobileMenuOpen={false} />

@@ -19,7 +19,7 @@ const squadaOne = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Enginners of Pellissippi",
+  title: "Engineers of Pellissippi",
   description: "Founded in 2024, we're a group of Pellissippi State students dedicated to exploring and innovating in STEM. We bring classroom knowledge to life, transforming it into practical, real-world skills.",
 };
 

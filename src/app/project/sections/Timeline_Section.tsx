@@ -12,7 +12,7 @@ export default function Timeline_Section() {
 
     return (
         <>
-            <Section bgImage={"./bg.png"} bgColor={"#003882"} section_style={{ color: "black" }}>
+            <Section bgImage={"./bg.png"} bgColor={"#003882"} section_style={{ color: "black" }} inner_style={{ maxWidth: "100%" }}>
                 <h1 className="text-center text-white text-3xl font-semibold py-12 px-4">
                     Competition Countdown to Launch!
                     <div className="text-base">
@@ -23,7 +23,7 @@ export default function Timeline_Section() {
                         Current
                     </button>
                 </h1>
-                <Timeline showCurrent={showCurrentTimeline}  />
+                <Timeline showCurrent={showCurrentTimeline} />
             </Section>
         </>
     )

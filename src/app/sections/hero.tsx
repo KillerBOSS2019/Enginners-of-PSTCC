@@ -3,7 +3,7 @@ import { CustomImage } from "../Image";
 
 export function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const images = ['./image1.png', './image2.png', './image3.png'];
+    const images = ['20241221-005856.jpg', '20241221_010553.jpg', 'RocketShell1_big_fins_v3_v1.jpg'];
   
     useEffect(() => {
       const interval = setInterval(() => {
@@ -28,7 +28,7 @@ export function Hero() {
               key={index}
               className={`absolute inset-0 transition-opacity duration-1000 ${index === currentIndex ? 'opacity-100' : 'opacity-0'}`}
             >
-              <CustomImage src={src} alt={`Image ${index + 1}`} layout="fill" objectFit="cover" />
+              <CustomImage src={"./team_slides/" + src} alt={`Image ${index + 1}`} layout="fill" objectFit="cover" />
             </div>
           ))}
           <button

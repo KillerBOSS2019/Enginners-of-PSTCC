@@ -19,9 +19,9 @@ export function Header({ setMobileMenuOpen, mobileMenuOpen }: HeaderProps) {
 
         <nav className="mx-auto flex items-center justify-between p-1 lg:px-8" style={{ backgroundColor: "var(--header)" }} aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Enginners of PSTCC</span>
-              <Image src="./logo.svg" alt="Next.js logo" width={100} height={100} priority />
+            <a href="./" className="-m-1.5 p-1.5">
+              <span className="sr-only">Engineers of PSTCC</span>
+              <Image src="./logo.svg" alt="Engineers of PSTCC" width={100} height={100} priority />
             </a>
           </div>
           <div className="hidden sm:flex">

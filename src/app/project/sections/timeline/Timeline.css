@@ -81,7 +81,7 @@
 }
 
 .animate_line .timeline-card:before {
-  animation: expandLine 0.5s forwards;
+  animation: expandLine 0.2s forwards;
 }
 
 /* The dots on the timeline */
@@ -134,7 +134,7 @@
 
 .timeline-event.past-event.animate_dot .timeline-dot {
   background-color: #007bff;
-  animation: timeline_dot 0.5s forwards;
+  animation: timeline_dot 0.2s forwards;
 }
 
 /* Smooth scroll bar styling */

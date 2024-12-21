@@ -8,6 +8,7 @@ import { Team } from './sections/Team';
 import { Footer } from './footer';
 import { Sponsors } from './sections/sponsors';
 import ScrollToTopButton from './scroll_to_top';
+import { EventList } from './sections/event_list';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -32,6 +33,7 @@ export default function Home() {
         <Hero />
         <Project />
         <Team />
+        <EventList />
         <Sponsors />
       </main>
       <Footer />
