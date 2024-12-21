@@ -7,7 +7,6 @@ import Timeline_Section from "./sections/Timeline_Section";
 import Launch_Condition from "./sections/Launch_Condition";
 import Motor_Specs from "./sections/Motor_Specs";
 import Rocket from "./sections/Rocket";
-import Rocket_Result from "./sections/Rocket_Result";
 
 export default function Page() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
